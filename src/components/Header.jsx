@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header(){
   return (
@@ -21,6 +22,7 @@ function Header(){
 
       <div className="jtron" ></div>
       <h1>Avery Organics</h1>
+       <Link to="/eventlist">Weekly Schedule</Link> | <Link to="/monthlymenu">Monthly Produce Variety</Link>
     </div>
   );
 }
