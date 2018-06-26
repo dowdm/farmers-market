@@ -5,7 +5,8 @@ function Menu(props){
   return (
     <div>
       <h3>{props.month}</h3>
-      <p><em>{props.selection}</em></p>
+      <p><em>{props.selection.map((fruit, index)=>
+        <div key={index}>{fruit}</div>)}</em></p>
       <hr/>
     </div>
   );
