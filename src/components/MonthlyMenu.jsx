@@ -276,7 +276,8 @@ function MonthlyMenu(){
       <hr/>
       {availableProduce.map((menu, index) =>
         <Menu month={menu.month}
-          selection={menu.selection}
+          selection={menu.selection.map((fruit, index)=>
+            <div>{fruit}</div>)}
           key={index}/>
       )}
     </div>
